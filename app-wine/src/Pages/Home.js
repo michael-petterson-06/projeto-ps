@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'; 
 import { apiGET } from '../services/apis';
 import PanelProducts from '../Components/PanelProducts';
-
+import styles from '../Components/Styles/Home.module.css'
 
 function Home() {
 
@@ -20,20 +20,16 @@ function Home() {
       
       console.log(arrayProducts)
 
-
-
-
-
-
     return (
         <main>
-            <h1>HOME</h1>
-            { arrayProducts.map((elementContract, index) => (
-            <PanelProducts
-              key={ `${elementContract}${index}` }
-              elementContract={ elementContract }
-            />
-          )) }
+            <section className={styles.containerProducts}>
+                { arrayProducts.map((elementContract, index) => (
+                <PanelProducts
+                key={ `${elementContract}${index}` }
+                elementContract={ elementContract }
+                />
+            )) }
+          </section>
         </main>
         
 

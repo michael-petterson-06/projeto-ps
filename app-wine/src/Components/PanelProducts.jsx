@@ -11,7 +11,7 @@ function PanelProducts(props) {
     
     return (
        
-        <section className='registroTabela'>
+        <div className='containerProducts'>
          {/* <Link 
             to={{
             pathname: 'ConsultContracts', 
@@ -20,7 +20,6 @@ function PanelProducts(props) {
             
             {/* <img  className='formatImage' src={ flag } alt="Editar" /> */}
             <img  className={styles.formatImage} src={ image } alt="Editar" />
-            
             <div>{ name }</div>
             <div>{price}</div>
             <div>{discount}</div>
@@ -47,7 +46,7 @@ function PanelProducts(props) {
 
 
             {/* </Link> */}
-        </section>
+        </div>
     )
 }
 

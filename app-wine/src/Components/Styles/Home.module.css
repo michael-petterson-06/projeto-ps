@@ -1,3 +1,7 @@
+.containerProducts {
+    display: flex;
+}
+
 .formatImage {
     Height:178.13px;
     Top:8.76px;
