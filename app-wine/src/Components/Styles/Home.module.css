@@ -1,9 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ 
+.containerAsideSection {
+    border: 2px ;
+    height:auto;
+    overflow:hidden;
+    background-color: blue;
+    margin: auto;
+}
+
+
+.refinaBusca {
+    width: 400px;
+    background-color: bisque;
+    padding: 1%;
+}
 .containerProducts {
     display: flex;
+    width: 60%;
+    background-color: aqua;
+    flex-wrap: wrap;
+    float: right;
 }
+
+
+.cardProduct {
+    width: 30%;
+    background-color: red;
+    border: 1px solid black;
+    margin: 1%;
+    padding: 0.5%;
+    text-align: center;
+}
+
 
 .formatImage {
     Height:178.13px;
-    Top:8.76px;
-    Left: 29.2px;
 }

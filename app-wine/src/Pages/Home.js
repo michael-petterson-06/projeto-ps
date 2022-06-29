@@ -21,7 +21,10 @@ function Home() {
       console.log(arrayProducts)
 
     return (
-        <main>
+        <main className={ styles.containerAsideSection }>
+            <aside className={ styles.refinaBusca}>
+                LADO PARA REDEFINIR BUSCA   
+            </aside>
             <section className={styles.containerProducts}>
                 { arrayProducts.map((elementContract, index) => (
                 <PanelProducts
