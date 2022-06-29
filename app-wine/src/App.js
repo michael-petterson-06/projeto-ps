@@ -15,8 +15,7 @@ function App() {
         <Route path="/products">
           <Products />
         </Route>
-        
-      </Switch>
+        </Switch>
     </Router>
       
   
