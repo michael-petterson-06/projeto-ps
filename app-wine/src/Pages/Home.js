@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { apiGET } from '../services/apis';
 import PanelProducts from '../Components/PanelProducts';
 
+
 function Home() {
 
 
