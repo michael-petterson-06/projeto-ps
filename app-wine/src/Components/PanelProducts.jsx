@@ -1,6 +1,6 @@
 import styles from '../Components/Styles/Home.module.css'
 import { Link } from 'react-router-dom';
-
+import wine from '../img/wine.jpeg';
 
 function PanelProducts(props) {
 
@@ -19,8 +19,14 @@ function PanelProducts(props) {
     return (
         <div className={ styles.cardProduct }>
           <div className={styles.cardInfoProduct} >
-            {/* <img  className='formatImage' src={ flag } alt="Editar" /> */}
-            <img  className={styles.formatImage} src={ image } alt="Editar" />
+            
+            <div className={ styles.containerImgsVinhoLogo }> 
+              <img  src={ image } alt="Editar" />
+              <div className={ styles.containerImgLogWine }>
+                  <img  className={styles.imgLogWine} src={ wine } alt="foto logo wine" />
+              </div>
+            </div>
+            
             <div>{ name }</div>
             <div className={ styles.containerPrice }>
               <span className={ styles.price }>{ price }</span>
@@ -37,6 +43,7 @@ function PanelProducts(props) {
               <span>{` R$${ priceNonMember }`}</span>
               <span></span>
             </div>
+            
             {/* <div className={styles.blackWine}>
               BLACK WINE
             </div> */}
