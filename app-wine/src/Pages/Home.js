@@ -19,6 +19,7 @@ function Home() {
     }
       
       console.log(arrayProducts)
+      const qtdProducts = arrayProducts.length
 
     return (
         
@@ -59,13 +60,13 @@ function Home() {
            
            <section className={ styles.secaoProduts }>
               
-                 <p>X produtos encontrados</p>    
+                 <p><span className={styles.qtdProducts}>{qtdProducts}</span> <span>produtos encontrados</span></p>    
               
             <div className={styles.containerProducts}>
                 { arrayProducts.map((products, index) => (
                 <PanelProducts
-                key={ `${products}${index}` }
-                products={ products }
+                  key={ `${products}${index}` }
+                  products={ products }
                 />
             )) }
           </div>

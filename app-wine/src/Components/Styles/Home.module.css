@@ -74,6 +74,12 @@
 }
 
 
+.qtdProducts {
+    color: #1D1D1B;
+    font-weight: bold;
+}
+
+
 .cardProduct {
     width: 30%;
     margin: 1%;

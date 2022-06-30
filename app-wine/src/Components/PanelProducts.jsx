@@ -9,7 +9,7 @@ function PanelProducts(props) {
             priceMember, priceNonMember, rating, region,
            size, sommelierComment, type } = props.products
 
-      
+  
             
             const str = priceMember.toString();
             const splitted = str.split('.');
