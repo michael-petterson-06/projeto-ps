@@ -30,7 +30,6 @@
 
 .cardProduct {
     width: 30%;
-    
     margin: 1%;
     padding: 0.5%;
     text-align: center;
@@ -47,24 +46,83 @@
 
 .containerPrice {
     display:flex;
-   align-items: center;
+    align-items: center;
+    margin: 5%;
 }
 
 
 .price {
     text-decoration: line-through;
     margin-left: 20%;
+    color: #C0C0C0;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
 .discount {
     color: #FFFFFF;
     background-color: #F79552;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 1.5%;
-    font-size: 75%;
-    margin-left: 1%;
+    font-size: 12px;
+    margin-left: 5%;
 }
+
+
+
+.containerSocioWine {
+    display:flex;
+    align-items: baseline;
+    margin: 5%;
+}
+
+
+.SocioWine {
+    font-size: 12px;
+    margin-left: 10%;
+}
+
+
+.real {
+    margin-left: 2%;
+    font-size: 12px;
+    color:#B6116E;
+    font-weight: bold;
+}
+
+
+.intPriceMember {
+    color:#B6116E;
+    font-weight: bold;
+}
+
+
+.decimalPriceMember {
+    font-size: 12px;
+    color:#B6116E;
+    font-weight: bold;
+}
+
+
+.containerNoSocio {
+    margin-bottom: 2.5%;
+    font-size: 12px;
+    font-weight: bold;
+    color: #C0C0C0;
+}
+
+
+/* .blackWine {
+    width: 56px;
+    height: 56px;
+    background-color:#F79552;
+    border-radius: 300px;
+    font-size:10px;
+    font-weight: bold;
+    display : flex;
+    align-items : center;
+} */
 
 .btnAdd {
     margin-top: 7%;
