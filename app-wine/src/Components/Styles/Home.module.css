@@ -8,7 +8,7 @@
     border: 2px ;
     height:auto;
     overflow:hidden;
-    background-color: blue;
+    background-color: #DEDEDE;
     margin: auto;
 }
 
@@ -18,10 +18,12 @@
     background-color: bisque;
     padding: 1%;
 }
+
+
 .containerProducts {
     display: flex;
     width: 60%;
-    background-color: aqua;
+    /* background-color: aqua; */
     flex-wrap: wrap;
     float: right;
 }
@@ -29,11 +31,57 @@
 
 .cardProduct {
     width: 30%;
-    background-color: red;
-    border: 1px solid black;
+    
     margin: 1%;
     padding: 0.5%;
     text-align: center;
+}
+
+
+.cardInfoProduct {
+    height: 75%;
+    padding: 7%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 8px rgb(178, 187, 184);
+}
+
+
+.containerPrice {
+    display:flex;
+   align-items: center;
+}
+
+
+.price {
+    text-decoration: line-through;
+    margin-left: 20%;
+}
+
+
+.discount {
+    color: #FFFFFF;
+    background-color: #F79552;
+    border-radius: 2px;
+    padding: 1.5%;
+    font-size: 75%;
+    margin-left: 1%;
+}
+
+.btnAdd {
+    margin-top: 7%;
+}
+
+
+.btnAdd button {
+    width: 100%;
+    padding: 3%;
+    background-color: #7EBC43;
+    border: #7EBC43;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 100%;
+    
 }
 
 

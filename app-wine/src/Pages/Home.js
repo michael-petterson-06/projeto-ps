@@ -26,10 +26,10 @@ function Home() {
                 LADO PARA REDEFINIR BUSCA   
             </aside>
             <section className={styles.containerProducts}>
-                { arrayProducts.map((elementContract, index) => (
+                { arrayProducts.map((products, index) => (
                 <PanelProducts
-                key={ `${elementContract}${index}` }
-                elementContract={ elementContract }
+                key={ `${products}${index}` }
+                products={ products }
                 />
             )) }
           </section>
