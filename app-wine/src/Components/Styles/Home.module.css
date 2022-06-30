@@ -23,7 +23,6 @@
 .containerProducts {
     display: flex;
     width: 60%;
-    /* background-color: aqua; */
     flex-wrap: wrap;
     float: right;
 }
