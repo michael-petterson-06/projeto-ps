@@ -3,8 +3,10 @@
     padding: 0;
 }
 
- 
+
+
 .containerAsideSection {
+    display: flex;
     border: 2px ;
     height:auto;
     overflow:hidden;
@@ -13,18 +15,62 @@
 }
 
 
-.refinaBusca {
-    width: 400px;
-    background-color: bisque;
+.containerAsideRigth {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
     padding: 1%;
+    align-items: center;
+}
+
+
+.containerAsideRigth div {
+   width: 50%;
+}
+
+
+.containerAsideRigth p {
+    padding-left: 8%;
+    margin-top: 5.5%;
+    margin-bottom: 5%;
+    width: 50%;
+    color: #333333;
+    font-weight: bold;
+}
+
+
+.containerAsideRigth div div {
+    padding: 2%;
+    margin: 8%;
+    width: 80%;
+}
+
+
+.containerAsideRigth div div label{
+    padding-left: 7%;
+    color: #1D1D1B;    
 }
 
 
 .containerProducts {
     display: flex;
-    width: 60%;
+    width: 100%;
     flex-wrap: wrap;
     float: right;
+}
+
+
+.secaoProduts {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+
+.secaoProduts  p {
+   padding: 2% 0% 0% 1.6%;
+   margin: 2% 0% 2% 0%;
+   color: #1D1D1B;  
 }
 
 

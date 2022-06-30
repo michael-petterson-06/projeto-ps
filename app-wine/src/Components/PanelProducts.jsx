@@ -19,12 +19,11 @@ function PanelProducts(props) {
     return (
         <div className={ styles.cardProduct }>
           <div className={styles.cardInfoProduct} >
-            
             <div className={ styles.containerImgsVinhoLogo }> 
-              <img  src={ image } alt="Editar" />
-              <div className={ styles.containerImgLogWine }>
-                  <img  className={styles.imgLogWine} src={ wine } alt="foto logo wine" />
-              </div>
+              <img  src={ image } alt="Foto do Produto" />
+               <div className={ styles.containerImgLogWine }>
+                  <img  className={styles.imgLogWine} src={ wine } alt="Foto logo wine" />
+               </div>
             </div>
             
             <div>{ name }</div>

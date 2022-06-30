@@ -21,19 +21,58 @@ function Home() {
       console.log(arrayProducts)
 
     return (
+        
+        
+
         <main className={ styles.containerAsideSection }>
-            <aside className={ styles.refinaBusca}>
-                LADO PARA REDEFINIR BUSCA   
-            </aside>
-            <section className={styles.containerProducts}>
+             
+          
+            <aside className={ styles.containerAsideRigth}>
+              <p>Redefina sua busca</p> 
+              
+              <div>
+                <div>
+                  <span>Por preço</span><br/>
+                </div>
+                <div>
+                  <input type="radio" id="css" name="fav_language" value="Até R$40"/>
+                  <label for="html">Até R$40</label><br/>
+                </div>
+                <div>
+                  <input type="radio" id="css" name="fav_language" value="R$40 A R$60"/>
+                  <label for="html">R$40 A R$60</label><br/>
+                </div>
+                <div>
+                  <input type="radio" id="css" name="fav_language" value="R$100 A R$200"/>
+                  <label for="html">R$100 A R$200</label><br/>
+                </div>
+                <div>
+                  <input type="radio" id="css" name="fav_language" value="R$200 A R$500"/>
+                  <label for="html">R$200 A R$500</label><br/>
+                </div>
+                <div>
+                  <input type="radio" id="css" name="fav_language" value="Acima de R$500"/>
+                  <label for="html">Acima de R$500</label><br/>
+                </div>
+              </div>
+           </aside>
+           
+           <section className={ styles.secaoProduts }>
+              
+                 <p>X produtos encontrados</p>    
+              
+            <div className={styles.containerProducts}>
                 { arrayProducts.map((products, index) => (
                 <PanelProducts
                 key={ `${products}${index}` }
                 products={ products }
                 />
             )) }
-          </section>
+          </div>
+           </section>
+           
         </main>
+        
         
 
     )
