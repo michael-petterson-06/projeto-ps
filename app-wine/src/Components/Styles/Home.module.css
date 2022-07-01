@@ -15,7 +15,7 @@
 }
 
 
-.containerAsideRigth {
+.containerAsideLeft {
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -24,12 +24,12 @@
 }
 
 
-.containerAsideRigth div {
+.containerAsideLeft div {
    width: 50%;
 }
 
 
-.containerAsideRigth p {
+.containerAsideLeft p {
     padding-left: 8%;
     margin-top: 5.5%;
     margin-bottom: 5%;
@@ -39,14 +39,14 @@
 }
 
 
-.containerAsideRigth div div {
+.containerAsideLeft div div {
     padding: 2%;
     margin: 8%;
     width: 80%;
 }
 
 
-.containerAsideRigth div div label{
+.containerAsideLeft div div label{
     padding-left: 7%;
     color: #1D1D1B;    
 }

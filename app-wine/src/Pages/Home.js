@@ -28,32 +28,31 @@ function Home() {
         <main className={ styles.containerAsideSection }>
              
           
-            <aside className={ styles.containerAsideRigth}>
+            <aside className={ styles.containerAsideLeft}>
               <p>Redefina sua busca</p> 
-              
               <div>
                 <div>
                   <span>Por preço</span><br/>
                 </div>
                 <div>
-                  <input type="radio" id="css" name="fav_language" value="Até R$40"/>
-                  <label for="html">Até R$40</label><br/>
+                  <input type="radio" name="price" id="quarenta"  value="Até-R$40"/>
+                  <label for="quarenta">Até R$40</label>
                 </div>
                 <div>
-                  <input type="radio" id="css" name="fav_language" value="R$40 A R$60"/>
-                  <label for="html">R$40 A R$60</label><br/>
+                  <input type="radio" name="price" id="sessenta"  value="R$40-R$60"/>
+                  <label for="sessenta">R$40 A R$60</label>
                 </div>
                 <div>
-                  <input type="radio" id="css" name="fav_language" value="R$100 A R$200"/>
-                  <label for="html">R$100 A R$200</label><br/>
+                  <input type="radio" name="price" id="duzentos"  value="R$100-R$200"/>
+                  <label for="duzentos">R$100 A R$200</label>
                 </div>
                 <div>
-                  <input type="radio" id="css" name="fav_language" value="R$200 A R$500"/>
-                  <label for="html">R$200 A R$500</label><br/>
+                  <input type="radio" name="price" id="quinhetos"  value="R$200-R$500"/>
+                  <label for="quinhetos">R$200 A R$500</label>
                 </div>
                 <div>
-                  <input type="radio" id="css" name="fav_language" value="Acima de R$500"/>
-                  <label for="html">Acima de R$500</label><br/>
+                  <input type="radio"  name="price" id="acima-quinhentos" value="acima"/>
+                  <label for="acima-quinhentos">Acima de R$500</label>
                 </div>
               </div>
            </aside>
