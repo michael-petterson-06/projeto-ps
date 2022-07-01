@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 
-import styles from './Styles/Navbar.module.css';
+import styles from '../Styles/Navbar.module.css';
 import logo from '../img/logo.jpeg';
 import user from '../img/user.jpeg';
 import search from "../img/search.jpeg";

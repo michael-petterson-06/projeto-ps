@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'; 
 import { apiGET } from '../services/apis';
 import PanelProducts from '../Components/PanelProducts';
-import styles from '../Components/Styles/Home.module.css'
+import styles from '../Styles/Home.module.css'
 
 function Home() {
 

@@ -1,8 +1,14 @@
 function Products() {
     return (
-        <h1>
-            TELA DE PRODUTOS
-        </h1>
+        <div>
+            <div>
+              Voltar  
+            </div>
+            <div>
+                <div>imagem</div>
+                <div>Informaçõe do produto</div>
+            </div>
+        </div>
     )
 }
 

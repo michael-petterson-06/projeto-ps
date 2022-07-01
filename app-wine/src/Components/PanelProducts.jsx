@@ -1,4 +1,4 @@
-import styles from '../Components/Styles/Home.module.css'
+import styles from '../Styles/Home.module.css'
 import { Link } from 'react-router-dom';
 import wine from '../img/wine.jpeg';
 
@@ -9,7 +9,7 @@ function PanelProducts(props) {
             priceMember, priceNonMember, rating, region,
            size, sommelierComment, type } = props.products
 
-  
+                    const { products } = props 
             
             const str = priceMember.toString();
             const splitted = str.split('.');
@@ -56,14 +56,18 @@ function PanelProducts(props) {
             <div>{type}</div> */}
           </div>
           <div className={ styles.btnAdd }>
-            <Link 
-              to={{
-                // pathname: 'ConsultContracts', 
-                        // contractId:contractId
-              }}>
-                <button>ADICIONAR</button>
-            </Link>
+           
+          
+          <Link 
+            to={{
+            pathname: '/products',
+            products: {products}, 
+          }}> 
+            <button>ADICIONAR</button>
+
+          </Link>
           </div>
+        
         </div>
     )
 }
