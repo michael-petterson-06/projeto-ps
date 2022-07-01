@@ -1,0 +1,27 @@
+.containerProducts {
+    background-color: aqua;
+}
+
+
+.containerProducts p {
+   background-color: blanchedalmond;
+}
+
+
+.containerAsides{
+    background-color: blue;
+    display: flex;
+}
+
+
+.asideImg {
+    width: 50%;
+    background-color: coral;
+}
+
+
+.asideInfo {
+   width: 50%;
+   background-color: darkgreen;
+}
+

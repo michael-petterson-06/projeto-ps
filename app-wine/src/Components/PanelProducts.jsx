@@ -18,6 +18,11 @@ function PanelProducts(props) {
             
     return (
         <div className={ styles.cardProduct }>
+          <Link 
+            to={{
+            pathname: '/products',
+            products: {products}, 
+          }}>  
           <div className={styles.cardInfoProduct} >
             <div className={ styles.containerImgsVinhoLogo }> 
               <img  src={ image } alt="Foto do Produto" />
@@ -55,20 +60,12 @@ function PanelProducts(props) {
             <div>{sommelierComment}</div>
             <div>{type}</div> */}
           </div>
-          <div className={ styles.btnAdd }>
            
-          
-          <Link 
-            to={{
-            pathname: '/products',
-            products: {products}, 
-          }}> 
-            <button>ADICIONAR</button>
-
           </Link>
+          <div className={ styles.btnAdd }>
+            <button>ADICIONAR</button>
           </div>
-        
-        </div>
+         </div>
     )
 }
 

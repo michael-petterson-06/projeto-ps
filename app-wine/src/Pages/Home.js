@@ -59,7 +59,7 @@ function Home() {
            
            <section className={ styles.secaoProduts }>
               
-                 <p><span className={styles.qtdProducts}>{qtdProducts}</span> <span>produtos encontrados</span></p>    
+            <p><span className={styles.qtdProducts}>{qtdProducts}</span> <span>produtos encontrados</span></p>    
               
             <div className={styles.containerProducts}>
                 { arrayProducts.map((products, index) => (
