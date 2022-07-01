@@ -1,22 +1,24 @@
 .containerProducts {
-    background-color: aqua;
+    background-color: #DEDEDE;
 }
 
 
 .containerProducts p {
-   background-color: blanchedalmond;
+    margin-left: 15%;
+    padding:2%;
+    color: #111111;
 }
 
 
 .containerAsides{
-    background-color: blue;
     display: flex;
 }
 
 
 .asideImg {
     width: 50%;
-    background-color: coral;
+    background-color: #DEDEDE;
+    text-align: center;
 }
 
 
@@ -30,4 +32,30 @@
    width: 50%;
    background-color: darkgreen;
 }
+
+
+/* .vinhoLocal {
+    display: flex;
+    align-items: baseline;
+
+} */
+.vinhoLocal svg {
+    color: #555;
+ 
+}
+
+.vinho {
+    color: #C81A78;
+}
+
+
+.region {
+    color: #555;
+}
+
+
+
+
+
+
 

@@ -3,10 +3,6 @@ import styles from '../Styles/Products.module.css'
 import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri'
 import { BsStar,BsStarHalf, BsStarFill } from 'react-icons/bs'
 
-//BsStar
-//RiIosArrowBack
-//RiArrowRightSLine
-//IoIosArrowBack
 function Products(props) {
     const  { avaliations, classification, country,
         discount, flag, id, image, name, price,
@@ -28,12 +24,12 @@ function Products(props) {
                     <img src={ image} alt="Foto do produto"></img>
                 </div>
                 <div className={ styles.asideInfo}>
-                    <div>
-                        <span>Vinhos</span>
+                    <div className={styles.vinhoLocal}>
+                        <span className={styles.vinho}>Vinhos</span>
+                        <span><RiArrowRightSLine/></span>
+                        <span className={styles.vinho}>{ country }</span>
                         <RiArrowRightSLine/>
-                        <span>{ country }</span>
-                        <RiArrowRightSLine/>
-                        <span>{ region }</span>
+                        <span className={styles.region}>{ region }</span>
                     </div>
                     <p>{name}</p>
                     <ul>
@@ -69,7 +65,6 @@ function Products(props) {
                         </div>
                         <div>Adicionar</div>
                     </div>
-
                 </div>
             </div>
         </section>
