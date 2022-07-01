@@ -20,6 +20,12 @@
 }
 
 
+.asideImg img {
+    width: 381px;
+    height: 579px;
+}
+
+
 .asideInfo {
    width: 50%;
    background-color: darkgreen;

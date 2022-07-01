@@ -23,13 +23,13 @@ function NavBar() {
                     <Link to="/">Clube</Link>
                 </li>
                 <li >
-                    <Link>Lojas</Link>
+                    <Link to="/">Lojas</Link>
                 </li>
                 <li >
-                    <Link>Produtores</Link>
+                    <Link to="/">Produtores</Link>
                 </li>
                 <li >
-                    <Link>Eventos</Link>
+                    <Link to="/">Eventos</Link>
                 </li>
             </ul>
         </div>

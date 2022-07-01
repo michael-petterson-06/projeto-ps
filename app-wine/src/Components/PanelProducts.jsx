@@ -21,7 +21,7 @@ function PanelProducts(props) {
           <Link 
             to={{
             pathname: '/products',
-            products: {products}, 
+            products: products
           }}>  
           <div className={styles.cardInfoProduct} >
             <div className={ styles.containerImgsVinhoLogo }> 
