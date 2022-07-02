@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import styles from '../Styles/Products.module.css'
-
 import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri'
 import { BsStar,BsStarHalf, BsStarFill } from 'react-icons/bs'
 
@@ -11,7 +11,7 @@ function Products(props) {
    
        const { products } = props.location
        console.log(products)
-    //    console.log()
+       console.log(priceNonMember)
 
        const str = priceMember.toString();
        const splitted = str.split('.');
@@ -19,7 +19,9 @@ function Products(props) {
        const decimalPriceMember = parseInt(splitted[1] || 0);
     return (
         <section className={ styles.containerProducts}>
-            <p className={ styles.voltar}><RiArrowLeftSLine/> Voltar </p>
+            <Link  to="/">
+                 <p className={ styles.voltar}><RiArrowLeftSLine/> Voltar </p>
+            </Link>
             <div className={ styles.containerAsides}>
                 <div className={ styles.asideImg}>
                     <img src={ image } alt="Foto do produto"></img>
