@@ -4,13 +4,14 @@ import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri'
 import { BsStar,BsStarHalf, BsStarFill } from 'react-icons/bs'
 
 function Products(props) {
-    const  { avaliations, classification, country,
+    const  { classification, country,
         discount, flag, id, image, name, price,
         priceMember, priceNonMember, rating, region,
        size, sommelierComment, type, volume } = props.location.products || {}
    
        const { products } = props.location
        console.log(products)
+    //    console.log()
 
        const str = priceMember.toString();
        const splitted = str.split('.');
@@ -18,10 +19,10 @@ function Products(props) {
        const decimalPriceMember = parseInt(splitted[1] || 0);
     return (
         <section className={ styles.containerProducts}>
-            <p><RiArrowLeftSLine/> Voltar </p>
+            <p className={ styles.voltar}><RiArrowLeftSLine/> Voltar </p>
             <div className={ styles.containerAsides}>
                 <div className={ styles.asideImg}>
-                    <img src={ image} alt="Foto do produto"></img>
+                    <img src={ image } alt="Foto do produto"></img>
                 </div>
                 <div className={ styles.asideInfo}>
                     <div className={styles.vinhoLocal}>
@@ -31,39 +32,45 @@ function Products(props) {
                         <RiArrowRightSLine/>
                         <span className={styles.region}>{ region }</span>
                     </div>
-                    <p>{name}</p>
-                    <ul>
+                    <h3>{name}</h3>
+                    <ul className={styles.ulProd}>
                         <li>
-                            <img src={flag} alt='Bandeira Pais'></img>
+                           <div className={ styles.flag}>
+                               <img src={ flag } alt='Bandeira Pais'></img>
+                           </div>   
                         </li>
                         <li>{ country } </li>
                         <li>{ type }</li>
                         <li>{ classification }</li>
                         <li>{ volume }</li>
                         <li>
-                            <BsStar/>
-                            <BsStarHalf/>
-                            <BsStarFill/>
+                            <div className={styles.start}> 
+                                <BsStarFill/>
+                                <BsStarHalf/>
+                                <BsStar/>
+                                <BsStar/>
+                                <BsStar/>
+                            </div>
                         </li>
-                        <li>{ avaliations }</li>
+                        <li>{ rating }</li>
                     </ul>
-                    <div>
-                        <span className={ styles.real }>R$</span>
-                        <span className={ styles.intPriceMember }>{ intPriceMember}</span>
-                        <span className={ styles.decimalPriceMember }>{`,${ decimalPriceMember }`} </span>
+                    <div className={ styles.priceProd}>
+                        <span className={ styles.realProd }>R$</span>
+                        <span className={ styles.intPriceMemberProd }>{ intPriceMember}</span>
+                        <span className={ styles.realProd }>{`,${ decimalPriceMember }`} </span>
                     </div>
-                    <span>{ `NÃO SÓCIO R$ ${priceNonMember}/UN.` }</span>
-                    <div>
-                        <span>Comentário do Sommelier</span>
-                        <p>{ sommelierComment }</p>
+                    <span className={ styles.noSocio}>{ `NÃO SÓCIO R$ ${priceNonMember}/UN.` }</span>
+                    <div className={styles.containerComment}>
+                        <h4>Comentário do Sommelier</h4>
+                        <p className={styles.comment}>{ sommelierComment }</p>
                     </div>
-                    <div>
-                        <div>
+                    <div className={styles.btnAdicionarProd}>
+                        <div className={ styles.positNeg}>
                             <span>-</span>
                             <p>3</p>
                             <span>+</span>
                         </div>
-                        <div>Adicionar</div>
+                        <div className={styles.addProd}>Adicionar</div>
                     </div>
                 </div>
             </div>

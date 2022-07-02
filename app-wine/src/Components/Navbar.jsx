@@ -18,7 +18,7 @@ function NavBar() {
                     <img src={ logo } alt="Costs" />
                 </Link>
             </div>
-            <ul>
+            <ul className={ styles.ulNav}>
                 <li >
                     <Link to="/">Clube</Link>
                 </li>

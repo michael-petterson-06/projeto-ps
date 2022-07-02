@@ -19,7 +19,7 @@
 }
 
 
-ul {
+.ulNav {
     display: flex;
     list-style-type: none;
     margin-top: 5%;
@@ -28,12 +28,12 @@ ul {
 }
 
 
-ul li {
+.ulNav li {
     margin-left: 12%;
 }
 
 
-ul li a {
+.ulNav li a {
     display: flex;
     text-decoration: none;
     color: #C0C0C0;
@@ -41,7 +41,7 @@ ul li a {
 }
 
 
-ul li a:hover {
+.ulNav li a:hover {
    color: #C81A78;
    text-decoration: underline;
 }
