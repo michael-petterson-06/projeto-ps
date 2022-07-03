@@ -1,22 +1,46 @@
+import React, { useContext } from 'react';
+import CarContext from '../context/CarContext';
 import { Link } from "react-router-dom";
 import styles from '../Styles/Products.module.css'
 import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri'
 import { BsStar,BsStarHalf, BsStarFill } from 'react-icons/bs'
 
 function Products(props) {
+    
+    const { setLoggedCar, loggedCar, aux, setAux } = useContext(CarContext);
+
     const  { classification, country,
         discount, flag, id, image, name, price,
         priceMember, priceNonMember, rating, region,
        size, sommelierComment, type, volume } = props.location.products || {}
    
-       const { products } = props.location
-       console.log(products)
-       console.log(priceNonMember)
+    const { products } = props.location
 
-       const str = priceMember.toString();
-       const splitted = str.split('.');
-       const intPriceMember = parseInt(splitted[0]);
-       const decimalPriceMember = parseInt(splitted[1] || 0);
+    const str = priceMember.toString();
+    const splitted = str.split('.');
+    const intPriceMember = parseInt(splitted[0]);
+    const decimalPriceMember = parseInt(splitted[1] || 0);
+    
+    const arrayAuxCar = loggedCar
+
+
+    const addCar = () => {
+        arrayAuxCar.push(products)
+        setLoggedCar(arrayAuxCar)
+        localStorage.setItem('car', JSON.stringify(arrayAuxCar))
+        setAux(aux + 1)
+    }
+    
+    
+    const removeCar = () => {
+        arrayAuxCar.pop();
+        setLoggedCar(arrayAuxCar)
+        localStorage.setItem('car', JSON.stringify(arrayAuxCar))
+        setAux(aux + 1)
+    }
+
+    
+    
     return (
         <section className={ styles.containerProducts}>
             <Link  to="/">
@@ -68,9 +92,9 @@ function Products(props) {
                     </div>
                     <div className={styles.btnAdicionarProd}>
                         <div className={ styles.positNeg}>
-                            <span>-</span>
+                            <span onClick={ removeCar }>-</span>
                             <p>3</p>
-                            <span>+</span>
+                            <span onClick={ addCar }>+</span>
                         </div>
                         <div className={styles.addProd}>Adicionar</div>
                     </div>

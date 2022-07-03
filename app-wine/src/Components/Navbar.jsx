@@ -1,7 +1,6 @@
+import React, { useState, useContext } from 'react';
+import CarContext from '../context/CarContext';
 import { Link } from "react-router-dom";
-
-
-
 import styles from '../Styles/Navbar.module.css';
 import logo from '../img/logo.jpeg';
 import user from '../img/user.jpeg';
@@ -10,6 +9,20 @@ import carrinho from "../img/carrinho.jpeg";
 
 
 function NavBar() {
+
+  //   Essa aux aparêntemente sem uso, faz a atualização da tela no carrinho
+  const { aux } = useContext(CarContext); 
+    
+  
+  let valor = JSON.parse(localStorage.getItem('car'))
+  let valueCar;
+  if (!valor) {
+    valueCar = 0 
+  } else {
+    valueCar = valor.length
+  }
+  
+
   return (
     <nav className={ styles.navBar }>
         <div className={styles.containerLinks}>
@@ -38,7 +51,7 @@ function NavBar() {
             <img  src={ user } alt="Foto user" />
             <div className={styles.carrinho}>
                 <img  src={ carrinho } alt="Foto sacolinha" />
-                <div>0</div>
+                <div>{ valueCar }</div>
             </div>
         </div>
     </nav>
