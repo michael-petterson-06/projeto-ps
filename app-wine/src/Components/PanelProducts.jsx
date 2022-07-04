@@ -27,7 +27,6 @@ function PanelProducts(props) {
     const addCar = () => {
       arrayAuxCar.push(products)
       setLoggedCar(arrayAuxCar)
-      console.log(loggedCar)
       localStorage.setItem('car', JSON.stringify(arrayAuxCar))
       setAux(aux + 1)
     }
